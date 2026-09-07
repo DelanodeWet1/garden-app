@@ -1,7 +1,7 @@
 # Take user input on the season and plant_type
 while True:
     try:
-        plant_type = int(input('''Please enter the season:
+        season = int(input('''Please enter the season:
 
 1. Spring
 2. Summer
@@ -9,7 +9,7 @@ while True:
 4. Winter
 
 '''))
-        if plant_type not in (1, 2, 3, 4):
+        if season not in (1, 2, 3, 4):
             print("Input not recognized. Please input an integer from the menu.")
         break
     except ValueError:
@@ -17,7 +17,7 @@ while True:
 
 while True:
     try:
-        plant_type = int(input('''Please enter the type of plant:
+        season = int(input('''Please enter the type of plant:
 
 1. Flower
 2. Vegetable
