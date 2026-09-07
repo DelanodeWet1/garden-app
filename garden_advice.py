@@ -17,7 +17,7 @@ while True:
 
 while True:
     try:
-        season = int(input('''Please enter the type of plant:
+        plant_type = int(input('''Please enter the type of plant:
 
 1. Flower
 2. Vegetable
@@ -43,6 +43,18 @@ elif season == 4:
     advice += "Protect your plants from frost with covers.\n"
 else:
     advice += "No advice for this season.\n"
+    
+# Recommend plants based on the season
+if season == 1:
+    advice += "The best plants to grow in spring are tomatoes, peppers and green beans.\n"
+elif season == 2:
+    advice += "The best plants to grow in summer are corn, cucumbers, squash and pumpkins.\n"
+elif season == 3:
+    advice += "The best plants to grow in autumn are lettuce, kale, onions and turnips.\n"
+elif season == 4:
+    advice += "The best plants to grow in winter are broccoli, cabbage, garlic and spinach.\n"
+else:
+    advice += "No plants to recommend for this season.\n"
 
 # Determine advice based on the plant type
 if plant_type == 1:
