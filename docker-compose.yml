@@ -1,0 +1,8 @@
+services:
+  garden-advice:
+    build: .
+    command: python garden_advice.py
+    volumes:
+      - .:/code
+    stdin_open: true
+    tty: true
